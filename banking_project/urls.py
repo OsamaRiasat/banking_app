@@ -20,4 +20,10 @@ from banking_app.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
+    path('new_client/', new_client, name='new_client'),
+    path('create_client', create_client, name='create_client'),
+    path('new_account/', new_account, name='new_account'),
+    path('create_account', create_account, name='create_account'),
+    path('new_statement/', new_statement, name='new_statement'),
+    path('create_statement', create_statement, name='create_statement'),
 ]
